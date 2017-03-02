@@ -74,7 +74,7 @@ margin: auto;
 
 .h1_home{
 	font-size: 80px;
-	font-family: arvo;
+	/*font-family: arvo;*/
 	font-weight: 300;
 	letter-spacing: 6px;
 }
@@ -83,10 +83,10 @@ margin: auto;
 
 /*own carousel */
 
-#owl-demo .item{
+.owl-carousel .item{
   margin: 3px;
 }
-#owl-demo .item img{
+.owl-carousel.item img{
   display: block;
   width: 100%;
   height: auto;
@@ -140,15 +140,52 @@ filter: alpha(opacity=95) !important;
 	color: #fff;
 }
 
-.mybutton_cyano{
+.mybutton_cyano:hover{
 	border: 1px solid #4A90BE;
 	color: #fff;
 	background-color:#4A90BE;
 }
 
-.mybutton_cyano:hover{
-	border: 1px solid #4A90BE;
-	color: #4A90BE !important;
+.mybutton_cyano{
+	border: 1px solid #fff;
+	color: #fff;
+	background: rgba(204, 204, 204, 0);
+}
+
+
+.btn-download-red:hover{
+	border: 1px solid #E72834;
+	color: #fff !important;
+	background-color:#E72834;
+}
+
+.btn-download-red{
+	border: 1px solid #E72834;
+	color: #E72834 !important;
+	background: rgba(204, 204, 204, 0);
+}
+
+.btn-download-blue:hover{
+	border: 1px solid #3BA7EE;
+	color: #fff !important;
+	background-color:#3BA7EE;
+}
+
+.btn-download-blue{
+	border: 1px solid #3BA7EE;
+	color: #3BA7EE !important;
+	background: rgba(204, 204, 204, 0);
+}
+
+.btn-download-green:hover{
+	border: 1px solid #75ba67;
+	color: #fff !important;
+	background-color:#75ba67;
+}
+
+.btn-download-green{
+	border: 1px solid #75ba67;
+	color: #75ba67 !important;
 	background: rgba(204, 204, 204, 0);
 }
 
@@ -231,7 +268,7 @@ color: #ECEBEB;
 }
 
 .navbar-brand {
-	font-family: arvo;
+	/*font-family: arvo;*/
 	letter-spacing: 3px;
 	font-weight: 400 !important;
 }
