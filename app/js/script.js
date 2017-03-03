@@ -111,11 +111,11 @@ var initVideo = function () {
     sphVideo.onplay = function () {
 
         // 停止音乐
-        var bgAudio = $('#bg-audio')[0];
-        if (!bgAudio.paused) {
-            bgAudio.pause();
-            stopRotation();
-        }
+        // var bgAudio = $('#bg-audio')[0];
+        // if (!bgAudio.paused) {
+        //     bgAudio.pause();
+        //     stopRotation();
+        // }
 
 
         $('#video_play').hide();
