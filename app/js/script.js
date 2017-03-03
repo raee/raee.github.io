@@ -14,6 +14,11 @@ $(window).load(function () {
 })
 
 $(document).ready(function () {
+
+
+    // menu
+    initMenu();
+
     //animated logo
     $(".navbar-brand").hover(function () {
         $(this).toggleClass("animated shake");
@@ -106,7 +111,15 @@ var scrollTo = function (selector) {
 }
 
 var initVideo = function () {
+
     var sphVideo = $('#video_sph')[0];
+    var width = $(window).width();
+
+    if (width < 765) {
+        // 顯示播放控件
+        sphVideo.controls = true;
+    }
+
 
     sphVideo.onplay = function () {
 
@@ -245,4 +258,12 @@ var getRotateAngle = function (e) {
     return rotate;
 }
 
+
+function initMenu() {
+    $('.nav li a').click(function () {
+        if ($('.navbar-ex1-collapse').hasClass('in')) {
+            $('.navbar-ex1-collapse').collapse('hide');
+        }
+    });
+}
 
